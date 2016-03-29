@@ -1,0 +1,14 @@
+<ion-view view-title="Enter your Activities">
+  <ion-content>
+    <h1>What's cool in your City?</h1> 
+    <form>
+      <input type="text" value="Activity" placeholder="What should people do?"></input>
+      <textareatype="text" value="description" placeholder="Describe it beter"></textarea> 
+      <select>
+        <option ng-repeat="city in cities" ng-href="#/app/cities/{{city.name}}"></option>
+      </select>
+
+    </form>      
+    <button type="submit">Submit!</button>
+  </ion-content>
+</ion-view>
